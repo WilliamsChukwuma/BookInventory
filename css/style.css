@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00a2ff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2b2d42;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+form input[type="text"],
+form input[type="date"] {
+    /* width: calc(50% - 10px); */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    padding: 12px 20px;
+    background-color: #333; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444; 
+}
+
+/* Filter Input */
+#filter {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Export Button */
+.export-button {
+    width: 200px;
+    height: 40px;
+    padding: 12px;
+    background-color: #f0f0f5;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.export-button:hover {
+    background-color: #ddd;
+}
+
+.export-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+/* Making it Responsive Design */
+@media (max-width: 768px) {
+    form input[type="text"], form input[type="date"] {
+        width: 100%;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
